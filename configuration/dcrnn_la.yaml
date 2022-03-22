@@ -1,0 +1,12 @@
+---
+base_dir: configuration
+log:
+  log_level: INFO
+  log_base_dir: logs
+  log_filename: info.log
+data:
+  dataset_dir: dataset/METR-LA
+  train_batch_size: 64
+  test_batch_size: 64
+  val_batch_size: 64
+  graph_pkl_filename: dataset/sensor_graph/adj_mx.pkl

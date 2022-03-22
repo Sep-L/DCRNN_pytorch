@@ -1,6 +1,6 @@
 """
 DCRNN
-Description: 读取数据并对数据作预处理
+Description: 读取原始数据并对数据作预处理
 Author: LQZ
 Time: 2022/3/18 16:26 
 """
@@ -127,9 +127,9 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     # 生成的 npz 文件所在目录
-    parser.add_argument("--output_dir", type=str, default="dataset/", help="Output directory.")
+    parser.add_argument("--output_dir", type=str, default="dataset/METR-LA", help="Output directory.")
     # 交通文件所在目录
-    parser.add_argument("--traffic_filename", type=str, default="dataset/METR-LA.h5", help="Raw traffic readings")
+    parser.add_argument("--traffic_filename", type=str, default="dataset/METR-LA/METR-LA.h5", help="Raw traffic readings")
     # 是否添加时间信息
     parser.add_argument("--add_time_in_day", type=bool, default=True, help="Add time in day")
     parser.add_argument("--add_day_in_week", type=bool, default=True, help="Add day in week")
